@@ -53,7 +53,7 @@ const Header: React.FC = () => {
           {/* Remove mx-auto class and add justify-content-start to align items to the left */}
           <ul className="navbar-nav items justify-content-start " >
             <li className="nav-item">
-              <Link className="nav-link"  target="_blank" href="https://github.com/oikos-cash" isExternal >
+              <Link className="nav-link"  target="_blank" href="https://github.com/oikos-cash" isExternal>
                   Github
               </Link>
             </li>
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
             <a
               className=" ml-lg-auto btn-bordered-gold"
               style={{border: "1px solid #f8bd45", borderRadius: "20px", height: "50px", width: "195px"}}
-              onClick={() => open()}
+              // onClick={() => open()}
             >
               <p style={{color:"#f8bd45", paddingLeft:"10px"}}>
               <i className="fa-solid fa-wallet mr-md-2 green-bg"></i>
@@ -159,7 +159,7 @@ const Header: React.FC = () => {
                       >
                         <a
                           className="btn ml-lg-auto btn-bordered-white"
-                          onClick={() => open}
+                          // onClick={() => open}
                           style={{paddingLeft:"20px"}}
                         >
                           <i className="fa-solid fa-wallet mr-md-2" ></i>

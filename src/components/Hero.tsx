@@ -30,11 +30,11 @@ const Hero: React.FC = () => {
       <Box
         // ml={"5%"}
         // p={isMobile ? "10vw" : "5vw"}
-        ml={isMobile ? 0 : "15%"}
+        ml={isMobile ? 0 : "13%"}
         flex={1}
         gap={20}
         className="container"
-        mt="120px" // Push content down to accommodate the banner
+        mt={isMobile ? "50%" : "120px"}
       >
         <Box className="row align-items-center justify-content-center">
           <Flex direction={{ base: "column", md: "row" }} align="center" justify="center" width="full">
@@ -69,9 +69,9 @@ const Hero: React.FC = () => {
                 </HStack>
               </Stack>
             </Box>
-            <Box width={isMobile ? "0" : "40%"} textAlign="center" ml={"125px"}>
+            <Box width={isMobile ? "0" : "35%"} textAlign="center">
               <Image
-                height="420px"
+                height="380px"
                 objectFit="cover"
                 src={ArtImage}
                 visibility={isMobile ? "hidden" : "initial"}
