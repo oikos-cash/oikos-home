@@ -73,10 +73,11 @@ const Header: React.FC = () => {
           <ul className="navbar-nav action">
             <li className="nav-item ml-2">
               <a
-                className="btn ml-lg-auto btn-bordered-gold"
+                className=" ml-lg-auto btn-bordered-gold"
+                style={{border: "1px solid #f8bd45", borderRadius: "20px", height: "50px", width: "195px"}}
                 onClick={() => open()}
               >
-                <p style={{color:"#f8bd45"}}>
+                <p style={{color:"#f8bd45", paddingLeft:"10px"}}>
                 <i className="fa-solid fa-wallet mr-md-2 green-bg"></i>
                 {isConnected
                   ? `${address?.slice(0, 6)}...${address?.slice(-6)}`
