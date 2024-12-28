@@ -30,13 +30,13 @@ const Hero: React.FC = () => {
       <Box
         // ml={"5%"}
         // p={isMobile ? "10vw" : "5vw"}
-        ml={isMobile ? 0 : "13%"}
+        ml={isMobile ? 0 : "15%"}
         flex={1}
         gap={20}
         className="container"
         mt={isMobile ? "50%" : "120px"}
       >
-        <Box className="row align-items-center justify-content-center">
+        <Box className="row align-items-center justify-content-center" >
           <Flex direction={{ base: "column", md: "row" }} align="center" justify="center" width="full">
             <Box className="col-md">
               <Stack spacing={0}>
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
                 </HStack>
               </Stack>
             </Box>
-            <Box width={isMobile ? "0" : "35%"} textAlign="center">
+            <Box width={isMobile ? "0" : "35%"} textAlign="center" mr={"10%"}>
               <Image
                 height="380px"
                 objectFit="cover"
