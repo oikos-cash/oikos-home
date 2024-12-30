@@ -57,7 +57,11 @@ const Header: React.FC = () => {
                   Github
               </Link>
             </li>
-
+            <li className="nav-item">
+              <Link className="nav-link"  target="_blank" href="https://x.com/oikos_cash" isExternal>
+                  X/Twitter
+              </Link>
+            </li>
             <li className="nav-item">
               <Link className="nav-link" href="https://oikoscash.medium.com/" target="_blank" isExternal>
                   Medium
@@ -129,7 +133,15 @@ const Header: React.FC = () => {
                         Github
                       </a>
                     </li>
-
+                    <li
+                      className="nav-item"
+                      data-bs-dismiss="modal"
+                      style={{ fontSize: "20px", marginTop:"20px"}}
+                    >
+                      <a className="btn ml-lg-auto btn-bordered-white" href="https://x.com/oikos_cash" target="_blank">
+                        X/Twitter
+                      </a>
+                    </li>
                     <li
                       className="nav-item"
                       data-bs-dismiss="modal"
