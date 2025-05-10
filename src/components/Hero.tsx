@@ -62,10 +62,15 @@ const Hero: React.FC = () => {
                 <HStack minW={100} justify={{ base: "center", md: "flex-start" }}>
                   <a href="https://oikoscash.medium.com/oikos-2025-a54f1b4fc5d9" onClick={() => gaEventTracker("read_announcement")} target="_blank">
                     <Button p={15} minW={100} fontWeight={600} background="black" color="#f8bd45" h={70} border={"1px solid gray"} ml={isMobile?-20:0}>
-                      Read the <br />announcement
+                      See the <br />announcement
                     </Button>
                   </a>
-
+                  &nbsp;
+                  <a href="https://docs.oikos.cash/"  target="_blank">
+                    <Button p={15} minW={150} fontWeight={600} background="black" color="#f8bd45" h={70} border={"1px solid gray"}>
+                      Read the <br />docs
+                    </Button>
+                  </a>
                 </HStack>
               </Stack>
             </Box>
