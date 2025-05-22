@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { LanguageContext, LanguageContextType } from "../core/LanguageProvider";
 import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useAccount } from "wagmi";
-import Logo from "../assets/images/oikos-type.svg";
+import Logo from "../assets/images/logo_dark.png";
 // import { isMobile } from 'react-device-detect';
 import { Link, Image } from '@chakra-ui/react';
 import { useMenu } from "../hooks/MenuContext";
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           <Image
             src={Logo}
             alt="Oikos Cash"
-            style={{ width: "150px", height: "50px" }}
+            style={{ width: "90px", height: "90px" }}
           />
           </Link>
           {/* Remove mx-auto class and add justify-content-start to align items to the left */}
