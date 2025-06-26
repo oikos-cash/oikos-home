@@ -80,26 +80,6 @@ const Header: React.FC = () => {
             </li>                         
           </ul>
 
-          <ul className="navbar-nav action">
-            {isMobile? <></>: 
-            <li className="nav-item ml-2">
-            <a
-              className=" ml-lg-auto btn-bordered-gold"
-              style={{border: "1px solid #f8bd45", borderRadius: "20px", height: "50px", width: "195px"}}
-              // onClick={() => open()}
-            >
-              <p style={{color:"#f8bd45", paddingLeft:"10px"}}>
-              <i className="fa-solid fa-wallet mr-md-2 green-bg"></i>
-              {isConnected
-                ? `${address?.slice(0, 6)}...${address?.slice(-6)}`
-                : "Connect wallet"}
-              </p>
-            </a>
-          </li>            
-            
-            }
-          </ul>
-
           <ul className="navbar-nav toggle">
             <li className="nav-item">
               <a
@@ -167,25 +147,6 @@ const Header: React.FC = () => {
                       </a>
                     </li>
 
-                    {/* Wallet Connect */}
-                    {isMobile ? 
-                        <li
-                        className="nav-item"
-                        data-bs-dismiss="modal"
-                        style={{ fontSize: "20px", marginTop:"20px"}}
-                      >
-                        <a
-                          className="btn ml-lg-auto btn-bordered-white"
-                          // onClick={() => open}
-                          style={{paddingLeft:"20px"}}
-                        >
-                          <i className="fa-solid fa-wallet mr-md-2" ></i>
-                          {isConnected
-                            ? `${address?.slice(0, 6)}...${address?.slice(-6)}`
-                            : <>&nbsp;&nbsp;{"Connect Wallet"}</>}
-                        </a>
-                      </li>
-                    : <></>}
 
                   </ul>
                 </div>
